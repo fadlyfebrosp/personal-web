@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\GoogleController;
 use App\Http\Controllers\ChatController;
+use App\Http\Controllers\ContactController;
 use Inertia\Inertia;
 
 /*
@@ -11,9 +12,9 @@ use Inertia\Inertia;
 |--------------------------------------------------------------------------
 */
 
-// Home / Dashboard
+// Home
 Route::get('/', function () {
-    return Inertia::render('Dashboard');
+    return Inertia::render('Home');
 })->name('home');
 
 // About page
@@ -28,6 +29,18 @@ Route::get('/achievements', function () {
 Route::get('/projects', function () {
     return Inertia::render('Projects');
 })->name('projects');
+// Dashboard
+Route::get('/dashboard', function () {
+    return Inertia::render('Dashboard');
+})->name('dashboard');
+Route::get('/contact', function () {
+    return Inertia::render('Contact');
+})->name('contact');
+
+Route::post('/contact', [ContactController::class, 'send'])
+    ->middleware('throttle:5,1')
+    ->name('contact.send');
+
 
 
 /*

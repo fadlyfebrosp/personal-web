@@ -5,41 +5,64 @@ export default function About() {
     return (
         <Layout>
             <div className="max-w-5xl space-y-12">
-                {/* ================= ABOUT HEADER ================= */}
+                {/* ================= ABOUT ================= */}
                 <section>
-                    <h1 className="text-3xl font-bold mb-1">About</h1>
-                    <p className="text-sm opacity-60 mb-6">
+                    {/* Title */}
+                    <div className="mb-1">
+                        <h1 className="text-xl font-semibold">About</h1>
+                    </div>
+                    <p className="text-sm text-base-content/60 mb-6">
                         A brief introduction to who I am.
                     </p>
 
-                    <div className="space-y-4 opacity-85 leading-relaxed">
-                        <p>
-                            I'm <b>Fadly Febro</b>, a Jakarta-based Software
-                            Engineer with a strong focus on building modern,
-                            scalable, and user-friendly web applications. I
-                            specialize in frontend development, crafting clean
-                            interfaces and smooth user experiences using HTML,
-                            CSS, Tailwind CSS, JavaScript, React JS, and Vite.
-                        </p>
+                    {/* Content */}
+                    <div
+                        className="
+            rounded-2xl
+            border border-white/5
+            bg-gradient-to-br from-base-200/80 to-base-300/40
+            px-6 py-6
+        "
+                    >
+                        <div className="space-y-6 leading-relaxed text-base opacity-90">
+                            <p>
+                                I'm <b>Fadly Febro</b>, a Jakarta-based Software
+                                Engineer with a strong focus on building modern,
+                                scalable, and user-friendly web applications. I
+                                specialize in frontend development, crafting
+                                clean interfaces and smooth user experiences
+                                using HTML, CSS, Tailwind CSS, JavaScript, React
+                                JS, and Vite.
+                            </p>
 
-                        <p>
-                            On the backend side, I work extensively with
-                            <b> Laravel, PHP, and MySQL</b> to build reliable
-                            and maintainable systems. I also have hands-on
-                            experience with <b>Go, Java, and Python</b> for
-                            performance-oriented services and backend logic.
-                        </p>
+                            <p>
+                                On the backend side, I work extensively with
+                                <b> Laravel, PHP, and MySQL</b> to build
+                                reliable and maintainable systems. I also have
+                                hands-on experience with
+                                <b> Go, Java, and Python</b> for
+                                performance-oriented services and backend logic.
+                            </p>
 
-                        <p>
-                            Beyond development, I’m familiar with deploying and
-                            managing applications using platforms such as
-                            <b> Vercel, Cloudflare, Firebase, and Apache</b>. I
-                            enjoy delivering production-ready solutions that are
-                            secure, efficient, and easy to maintain.
-                        </p>
+                            <p>
+                                Beyond development, I’m familiar with deploying
+                                and managing applications using
+                                <b> Vercel, Cloudflare, Firebase, and Apache</b>
+                                . I enjoy delivering production-ready solutions
+                                that are secure, efficient, and easy to
+                                maintain.
+                            </p>
 
-                        <p className="font-semibold mt-6">Best regards,</p>
-                        <p className="text-xl font-bold text-primary">fadly</p>
+                            {/* Closing */}
+                            <div className="pt-4">
+                                <p className="mb-2">Best regards,</p>
+                                <img
+                                    src="/fadly.png"
+                                    alt="Fadly Signature"
+                                    className="h-24 object-contain"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </section>
 

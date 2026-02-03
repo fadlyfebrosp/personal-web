@@ -22,7 +22,7 @@ export default function Layout({ children }) {
                         className="absolute inset-0 bg-black/50"
                         onClick={() => setOpen(false)}
                     />
-                    <div className="absolute left-0 top-0 h-full w-72 bg-base-200 shadow-xl">
+                    <div className="absolute right-0 top-0 h-full w-72 bg-base-200 shadow-xl">
                         <Sidebar onClose={() => setOpen(false)} />
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,8 +18,11 @@
     @vite(['resources/css/app.css', 'resources/js/app.jsx'])
     @inertiaHead
 </head>
+
 <body class="h-screen overflow-hidden">
 
     @inertia
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="c3730b63-9363-41f7-8e4a-3b2ec01e113b"></script>
 </body>
+
 </html>

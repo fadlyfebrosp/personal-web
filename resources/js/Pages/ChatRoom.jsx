@@ -48,7 +48,7 @@ export default function ChatRoom({ messages = [] }) {
         <Layout>
             <div className="flex flex-col h-full min-h-0">
                 {/* Header */}
-                <div className="mb-4">
+                <div className="mb-1">
                     <h1 className="text-2xl font-bold mb-1">Chat Room</h1>
                     <p className="opacity-70">
                         Feel free to share your thoughts, suggestions,
@@ -59,7 +59,7 @@ export default function ChatRoom({ messages = [] }) {
                 </div>
 
                 {/* Messages */}
-                <div className="flex-1 overflow-y-auto space-y-4 pr-2 mb-6">
+                <div className="flex-1 overflow-y-auto space-y-4 pr-2">
                     {messages.length === 0 && (
                         <p className="opacity-50 text-sm">No messages yet.</p>
                     )}
@@ -118,7 +118,7 @@ export default function ChatRoom({ messages = [] }) {
                 {/* GUEST (BELUM LOGIN) */}
                 {/* ========================= */}
                 {!user && (
-                    <div className="border-t border-base-300 py-10 mt-6 text-center">
+                    <div className="border-t border-base-300 p-4 mt-3 text-center">
                         <p className="mb-6 opacity-70">
                             Please sign in to join the conversation.
                         </p>
